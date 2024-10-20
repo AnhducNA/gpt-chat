@@ -15,6 +15,7 @@
     "express": "^4.21.1",
     "llama-node": "^0.1.6",
     "llamaai": "^1.0.4",
+    "llamaindex": "^0.7.0",
     "node-llama-cpp": "^3.1.1",
     "nodemon": "^3.1.7"
   }
