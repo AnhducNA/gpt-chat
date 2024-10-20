@@ -68,7 +68,7 @@ async function sendMessage() {
     // Display the typing indicator while waiting for the OpenAI's response
     displayTypingIndicator();
 
-    const response = await fetch("http://localhost:3000/message", {
+    const response = await fetch("https://gpt-chat-dkkh.onrender.com/message", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
