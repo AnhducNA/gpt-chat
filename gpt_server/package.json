@@ -1,0 +1,21 @@
+{
+  "name": "gpt_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "@llama-node/llama-cpp": "^0.1.6",
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "llama-node": "^0.1.6",
+    "llamaai": "^1.0.4",
+    "node-llama-cpp": "^3.1.1",
+    "nodemon": "^3.1.7"
+  }
+}
