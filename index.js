@@ -23,10 +23,10 @@ const corsOptionsDelegate = function (req, callback) {
 };
 // app.use(cors(corsOptionsDelegate));
 
-app.use(express.static(path.join(__dirname, "..", "frontend")));
+app.use(express.static(path.join(__dirname, "frontend")));
 app.use(express.json());
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "frontend", "index.html"));
+  res.sendFile(path.join(__dirname, "frontend", "index.html"));
 });
 
 app.listen(PORT, function () {

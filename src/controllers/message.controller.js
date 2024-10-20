@@ -16,7 +16,6 @@ async function handleMessage(req, res) {
   await axios
     .post("http://localhost:11434/api/chat", bodyChat)
     .then((res) => {
-      console.log(res.data);
       messageRes = res.data.message;
     })
     .catch((err) => {
