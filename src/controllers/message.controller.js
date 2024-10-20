@@ -1,7 +1,7 @@
 const axios = require("axios");
 
 async function handleMessage(req, res) {
-  let messageRes = "";
+  let messageRes = { role: "assistant", content: "" };
   const bodyChat = {
     model: "llama3.2",
     messages: [
@@ -14,12 +14,13 @@ async function handleMessage(req, res) {
   };
 
   await axios
-    .post("http://localhost:11434/api/chat", bodyChat)
+    .post("http://localhost:11434/api/chat1", bodyChat)
     .then((res) => {
       messageRes = res.data.message;
     })
     .catch((err) => {
       console.log(err);
+      messageRes.content = "Error connect to LLAMA: " + err.message;
     });
   return res.json({ message: messageRes });
 }
